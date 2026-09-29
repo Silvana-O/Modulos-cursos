@@ -359,8 +359,8 @@ def create_theory_pdf(filename="Módulo_2_Material_1_Teoria.pdf"):
     story.append(Paragraph("13. Machine Learning no es magia", st['h2']))
     story.append(Paragraph("Un sistema de ML requiere: <i>Problema + Datos + Preparación + Algoritmo + Entrenamiento + Evaluación</i>. Si los datos son insuficientes o erróneos, la solución fallará.", st['body']))
 
-    # --- 16. Para recordar ---
-    story.append(Paragraph("16. Para recordar", st['h2']))
+    # --- 14. Para recordar ---
+    story.append(Paragraph("14. Para recordar", st['h2']))
     puntos_clave = [
         "Machine Learning permite aprender patrones a partir de datos.",
         "Las características (features) aportan información; la etiqueta (label) es lo que se busca predecir.",
@@ -371,8 +371,8 @@ def create_theory_pdf(filename="Módulo_2_Material_1_Teoria.pdf"):
     for pk in puntos_clave:
         story.append(Paragraph(f"• {pk}", st['bullet']))
 
-    # --- 18. Glosario ---
-    story.append(Paragraph("18. Glosario de términos", st['h2']))
+    # --- 15. Glosario ---
+    story.append(Paragraph("15. Glosario de términos", st['h2']))
     glosario_data = [
         [Paragraph("Término", st['th']), Paragraph("Definición", st['th'])],
         [Paragraph("Machine Learning", st['td_bold']), Paragraph("Conjunto de métodos que permite a los sistemas aprender patrones a partir de datos.", st['td'])],
@@ -395,8 +395,8 @@ def create_theory_pdf(filename="Módulo_2_Material_1_Teoria.pdf"):
     story.append(tbl_g)
     story.append(Spacer(1, 10))
 
-    # --- 20. Conexión ---
-    story.append(Paragraph("20. Conexión con el siguiente material", st['h2']))
+    # --- 16. Conexión ---
+    story.append(Paragraph("16. Conexión con el siguiente material", st['h2']))
     story.append(Paragraph("En el próximo material abordaremos el <b>Aprendizaje Supervisado</b>, clasificando problemas en Regresión (valores continuos) y Clasificación (categorías), e introduciendo algoritmos como Regresión Lineal, Árboles de Decisión y k-NN.", st['body']))
 
     def canvas_builder(*args, **kwargs):

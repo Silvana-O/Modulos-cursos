@@ -346,7 +346,7 @@ def create_theory_pdf(filename="Modulo2_Material3_Teoria.pdf"):
     story.append(Paragraph("Una técnica fundamental es <b>PCA (Análisis de Componentes Principales)</b>, la cual transforma múltiples características originales en un número menor de componentes principales que resumen la variabilidad de los datos.", st['body']))
 
     # --- Resumen y Glosario ---
-    story.append(Paragraph("Glosario de conceptos", st['h2']))
+    story.append(Paragraph("11. Glosario de conceptos", st['h2']))
     glosario_data = [
         [Paragraph("Concepto", st['th']), Paragraph("Definición", st['th'])],
         [Paragraph("Aprendizaje No Supervisado", st['td_bold']), Paragraph("Enfoque de ML que busca patrones o estructuras sin etiquetas conocidas.", st['td'])],

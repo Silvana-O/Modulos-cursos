@@ -186,8 +186,8 @@ def create_activities_pdf(filename="Módulo_2_Actividades.pdf"):
     story.append(Paragraph("Ejercicios de reflexión, caso práctico y autoevaluación teórica", st['subtitle']))
     story.append(HRFlowable(width="100%", thickness=1.5, color=COLOR_ACCENT, spaceAfter=12))
 
-    # --- 14. Actividad de reflexión ---
-    story.append(Paragraph("14. Actividad de reflexión", st['h2']))
+    # --- 1. Actividad de reflexión ---
+    story.append(Paragraph("1. Actividad de reflexión", st['h2']))
     story.append(Paragraph("Responde con tus propias palabras a los siguientes planteamientos:", st['body']))
     
     preguntas_ref = [
@@ -200,8 +200,8 @@ def create_activities_pdf(filename="Módulo_2_Actividades.pdf"):
         story.append(Paragraph(f"<b>{pr}</b>", st['body']))
         story.append(Spacer(1, 15)) # Espacio para responder
 
-    # --- 15. Actividad práctica ---
-    story.append(Paragraph("15. Actividad práctica: Análisis de caso", st['h2']))
+    # --- 2. Actividad práctica ---
+    story.append(Paragraph("2. Actividad práctica: Análisis de caso", st['h2']))
     story.append(Paragraph("Analiza la siguiente situación en una institución educativa:", st['body']))
     story.append(Paragraph("<i>Se busca desarrollar un sistema que estime si un estudiante podría necesitar apoyo adicional en una asignatura.</i>", st['body']))
 
@@ -231,8 +231,8 @@ def create_activities_pdf(filename="Módulo_2_Actividades.pdf"):
     story.append(Paragraph("e. Menciona al menos una limitación o riesgo ético de implementar este sistema.", st['body']))
     story.append(Spacer(1, 10))
 
-    # --- 17. Autoevaluación ---
-    story.append(Paragraph("17. Autoevaluación", st['h2']))
+    # --- 3. Autoevaluación ---
+    story.append(Paragraph("3. Autoevaluación", st['h2']))
 
     story.append(Paragraph("<b>1. ¿Qué es Machine Learning?</b>", st['body']))
     story.append(Paragraph("A. Un lenguaje de programación.", st['option']))
@@ -272,8 +272,8 @@ def create_activities_pdf(filename="Módulo_2_Actividades.pdf"):
     story.append(Paragraph("e. Es importante evaluar un modelo después de entrenarlo. (  )", st['option']))
     story.append(Spacer(1, 10))
 
-    # --- 19. Actividad de Cierre ---
-    story.append(Paragraph("19. Actividad de cierre", st['h2']))
+    # --- 4. Actividad de Cierre ---
+    story.append(Paragraph("4. Actividad de cierre", st['h2']))
     story.append(Paragraph(
         "Explica con tus propias palabras el flujo completo: <b>Datos → Entrenamiento → Modelo → Predicción → Evaluación</b>. "
         "Tu redacción debe detallar los insumos, el proceso de ajuste, qué representa la salida y la importancia de la métrica final (Extensión: 150 - 250 palabras).", st['body']
